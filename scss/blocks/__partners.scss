@@ -1,0 +1,102 @@
+.partners{
+    margin-top: 157px;
+     background: #FAFAFA;
+    &_icon{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_form{
+        margin-top: 70px;
+        margin-bottom: 85px;
+        background: var(--bg-color);
+        width: 100%;
+        height: 124px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .right_info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 50px;
+        p{
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.1px;
+            color: #FFFFFF;
+        }
+    }
+    .subscribe{
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 52px;
+        
+        input{
+            padding: 15px 0 15px 20px;
+            border: none;
+            outline: none;
+            width: 20.80em;
+            border-radius: 5px  0 0 5px;
+            
+        }
+        input[type=email]::placeholder{
+            
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 28px;
+            letter-spacing: 0.2px;
+            color: #737373;
+        }
+        &_btn{
+            border-radius: 0 5px 5px 0;
+            width: 117px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background: var(--btn-hover-color);
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #fff;
+            transition: .3s ease-in;
+        }
+        &_btn:hover{
+            background: #cd841d;
+            transition: .3s ease-out;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .partners_form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+    .partners_icon{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .subscribe{
+        margin-top: 15px;
+        text-align: center;
+    }
+    form{
+        transform: translateX(30px);
+    }
+    .subscribe input[type=email]{
+       text-align: center;
+        width: 100%;
+    }
+}

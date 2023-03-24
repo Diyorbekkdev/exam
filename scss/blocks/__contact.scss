@@ -1,0 +1,90 @@
+.contact{
+    padding-top: 80px;
+    background: #F3F3F3;
+    text-align: center;
+    &_cards{
+        margin-top: 80px;
+        padding-bottom: 208px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .card{
+        padding: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #FFFFFF;
+        transition: .3s ease-in;
+        box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+        // gap: 30px;
+        p{
+            padding-top: 15px;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #252B42;
+        }
+        .get{
+            padding-top: 15px;
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.1px;
+            color: #252B42;
+        }
+    }
+    &_btn{
+        margin-top: 25px;
+        padding: 10px 20px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #FFA62B;
+        border: 1px solid #FFA62B;
+        border-radius: 5px;
+    }
+    .card:hover{
+      background: #252B42;
+      transition: .3s ease-out;
+        p{
+            color: #fff;
+        }
+        svg{
+            fill: #fff;
+        }
+        .contact_btn{
+            border: 1px solid #fff;
+            color: #fff;
+        }
+      
+    }
+}
+
+
+@media (max-width: 1000px){
+    .contact_cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .card{
+        width: 60%;
+    }
+}
+
+@media (max-width: 800px){
+    .contact .card{
+        width: 70%;
+    }
+}

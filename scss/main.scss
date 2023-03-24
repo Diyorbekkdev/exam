@@ -1,0 +1,43 @@
+@import 'blocks/_header';
+@import 'blocks/_normalize';
+@import 'blocks/_home';
+@import 'blocks/_toggle';
+@import 'blocks/_backtop';
+@import 'blocks/_about';
+@import 'blocks/_advice';
+@import 'blocks/_service';
+@import 'blocks/_partners';
+@import 'blocks/_contact';
+@import 'blocks/_form';
+@import 'blocks/_footer';
+
+
+:root{
+    --font-family: 'Montserrat';
+    --btn-hover-color: #FFA62B;
+    --secondary-color: #00A0C1;
+    --bg-color: #16697A;
+    --contact-hover-color: #252B42;
+    --font-size: 16px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #FAFAFA;
+}
+
+.container{
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1050px){
+    .container{
+        padding-right:  15px;
+        padding-left: 15px;
+        margin: 0 auto;
+    }
+}

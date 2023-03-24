@@ -1,0 +1,169 @@
+.empower{
+    background: url('/assets/images/background-img.svg') center no-repeat;
+    background-size: 100% ;
+    margin-top: -140px;
+    &_title{
+        width: 50%;
+        padding-bottom: 88px;
+       h1{
+        padding-top: 230px;
+        font-family: var(--font-family);
+        font-weight: 800;
+        font-size: 3.625em;
+        line-height: 80px;
+        letter-spacing: 0.2px;
+        color: #252B42;
+       }
+       p{
+        margin-top: 35px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 1.25em;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        color: #737373;
+       }
+    }
+    &_btn{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &_btn a{
+        margin-top: 35px;
+        padding: 10px 36px;
+        display: inline-block;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+        border-radius: 37px;
+        transition: .3s ease-in;
+    }
+    a:hover{
+        border: 1px solid var(--btn-hover-color);
+        color: #fff;
+        background: var(--btn-hover-color);
+        transition: .3s ease-out;
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    }
+    &_cards{
+        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 35px 71px 35px 40px;
+        width: 32%;
+        background: #fff;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        transition: .4s ease-out;
+        &_info{
+            padding-top: 10px;
+            font-family: var(--fontfamily);
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.1px;
+            color: #252B42;
+        }
+        &_secondary_info{
+            padding-top: 10px;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: #737373;
+        }
+    }
+    .card:hover{
+        background: var(--secondary-color);
+        transition: .4s ease-out;
+        transform: translateY(-10px);
+        cursor: pointer;
+        p{
+            color: #fff;
+        }
+        svg{
+           fill: #fff;
+        }
+        img{
+            fill: #fff;
+        }
+    }
+}
+
+
+// MEDIA QUARY STARTING
+@media (max-width: 1050px){
+    .empower{
+        margin-top: -160px;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 770px){
+    .empower{
+        background: url('/assets/images/background-img.svg') top;
+        background-size: cover;
+     }
+    .empower_title{
+        width: 100%;
+        text-align: center;
+    }
+    .empower_btn{
+        display: inline-block;
+    }
+    .empower_cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        .card{
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 416px){
+    .empower{
+       background-image: url('/assets/images/background-img.svg') top;
+       height: 100%;
+       background-size: cover;
+       
+    }
+    .empower_title{
+        width: 100%;
+        h1{
+            font-size: 2.5em;
+            line-height: 57px;
+            letter-spacing: 0.2px;
+        }
+        p{
+            font-size: 1.25em;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+        }
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+
+
+
+// 935042884

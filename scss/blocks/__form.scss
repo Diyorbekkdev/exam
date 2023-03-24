@@ -1,0 +1,67 @@
+.form{
+    text-align: center;
+    form{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    input{
+        outline: none;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=tel]::placeholder{
+        width: 100%;
+        padding: 13px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: #828282;
+    }
+    input[type=text], input[type=email], input[type=tel], textarea {
+        width: 100%;
+        padding: 13px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+        margin-bottom: 10px;
+      }
+}
+
+select{
+    width: 100%;
+    padding: 13px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.contact_button{
+    padding: 15px 40px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 74px;
+    margin-bottom: 113px;
+    background: #FFA62B;
+    color: #fff;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 700;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+
+.contact_button:hover{
+    transition: .3s ease-out;
+    background: #dc9025;   
+}
+
+@media (max-width: 830px){
+   #main_form{
+    display: none;
+   }
+}

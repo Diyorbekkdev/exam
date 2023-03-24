@@ -1,0 +1,110 @@
+.service{
+    position: relative;
+    text-align: center;
+    &_part{
+        margin-top: 100px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 120px;
+       
+    }
+    &_video{
+        width: 60%;
+        position: relative;
+    }
+    &_video::before{
+        content: '';
+        background: url('/assets/icons/play.svg');
+        width: 98px;
+        height: 98px;
+        display: block;
+        position: absolute;
+        left: 40%;
+        // right: 50%;
+        top: 40%;
+        transition: .3s ease-in;
+    }
+    &_video:hover::before{
+        cursor: pointer;
+        // filter: invert(30%);
+        transform: scale(1.1);
+        transition: .3s ease-out;
+        box-shadow: 0px 26px 5px -1px rgba(34, 60, 80, 0.6);
+        opacity: 0;
+    }
+    iframe{
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    }
+
+    &_info{
+        width: 40%;
+        h1{
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 57px;
+            letter-spacing: 0.2px;
+            color: #252B42;
+        }
+        .info{
+            padding-top: 10px;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: #737373;
+        }
+        .first{
+            padding-top: 30px;
+            list-style-image: url('/assets/icons/service-icon.svg');
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            color: #252B42;
+        }
+        .second{
+            padding-top: 30px;
+            list-style-image: url('/assets/icons/service-icon2.svg');
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            color: #252B42;
+        }
+        .list_info{
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: #737373;
+        }
+
+    }
+}
+
+@media (max-width: 1000px){
+    .service_part{
+        display: flex;
+        flex-direction: column;
+    }
+    iframe{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .service_video{
+        width: 100%;
+    }
+    .service_info{
+        width: 100%;
+    }
+}
